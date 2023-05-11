@@ -1,0 +1,712 @@
+/*
+Name: Lilin Zeng
+Date: Mar,12 2023
+Section: CST 8285 section 314
+Lab: Assignment 1
+File: style.css
+Lab objective: Create a personal portfolio.
+*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+ }
+
+ html{
+  scroll-behavior: smooth;
+ }
+
+ body{
+    background: #080808;
+    color: #fff;
+ }
+
+ #header{
+   width: 100%;
+   height: 100vh;
+   
+ }
+ .container{
+   padding: 10px 10%;
+ }
+
+ nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   
+   
+ }
+
+
+.logo{
+  width: 140px;
+}
+
+
+ nav ul li{
+   display:inline-block;
+   list-style: none;
+   margin: 10px 20px;
+  
+ }
+
+ nav ul li a{
+   color:#fff;
+   text-decoration: none;
+   font-size: 18px;
+   position: relative;
+
+ }
+
+ nav ul li a::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #ff004f;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+ }
+
+ nav ul li a:hover::after{
+  width: 100%;
+ }
+
+ .header-text{
+    margin-top: 10%;
+    margin-left: 7%;
+    font-size: 30px;
+    padding: 40px;
+    
+ }
+
+ .header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+ }
+
+ .name{
+  color:#ff004f;
+ }
+
+ .click{
+  color:rgb(161, 182, 236);
+  font-size: 30px;
+ }
+
+ .header-text h1 a{
+  text-decoration: none;
+  color:#ff004f;
+ }
+
+ /*-----------about-----------*/
+ #about{
+ 
+  color: #ababab;
+ }
+
+ .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+
+ .about-col-1{
+  flex-basis: 35%;
+ }
+
+ .about-col-1 img{
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  
+  
+ }
+
+ .about-col-2{
+  flex-basis: 60%;
+ }
+
+ .about-col-2 p{
+  font-size: 20px;
+  text-align: left;
+ }
+ .sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color:#fff;
+ }
+
+ .tab-titles{
+  display:flex;
+  margin: 20px 0 40px;
+ }
+
+ .tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+ }
+
+ .tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+ }
+.tab-links.active-link::after{
+  width:50%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin:10px 0;
+}
+.tab-contents ul li span{
+  color:#b54769;
+  font-size: 14px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+
+/*-------------------------resume.html---------------------*/
+.picture{
+  max-width: 500px;
+  max-height: 380px;
+  
+}
+
+.picture-col-1{
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.text-intro p{
+  font-size: 20pt;
+  font-weight: bold;
+}
+.text-intro p span{
+  color:#ff004f;
+}
+.heading{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  font-size: 50pt;
+  font-style: italic;
+}
+
+/*To make text jump out from bottom to top on a website.*/
+.text{
+  animation:jump-out 1s forwards;
+}
+
+@keyframes jump-out {
+  from{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container-2{
+  display: flex;
+  padding: 10px 10%;
+}
+.text-p{
+  margin-top: 10%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.p2{
+  margin-top: 5%;
+}
+
+.p3{
+  margin-top: 5%;
+}
+
+.p4{
+  margin-top: 5%;
+}
+
+/*--------------------social icons-------------------------*/
+.icon-1 i{
+  margin-right: 20px;
+  margin-top: 10%;
+  font-size: 1.5em;
+}
+
+.icon-2 i{
+  margin-right: 20px;
+  margin-top: 2%;
+  font-size: 1.5em;
+}
+
+.icon-3 i{
+  margin-right: 20px;
+  margin-top: 2%;
+  font-size: 1.5em;
+}
+
+
+.social-icons a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blank{
+  margin-top: 100px;
+}
+
+/*----------------------VOLUNTEER EXPERIENCES-------------------------*/
+.volunteer-experience{
+  display: flex;
+  font-size: 20px;
+  padding: 50px 0;
+}
+.column-1{
+  margin-left:10%;
+  margin-top: 10px;
+}
+
+.column-2{
+  margin-left: 15%;
+}
+
+
+
+.line {
+  border-bottom: 3px solid grey; 
+  
+  margin:10px;
+  
+}
+
+.job{
+  display: inline-block;
+}
+.job-date{
+  display: block;
+  float: right;
+  text-align: right;
+}
+.job-place{
+  margin-bottom: 10px;
+}
+
+
+.column-2{
+  padding: 20px;
+}
+
+.fade-up {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  
+}
+
+.fade-up li{
+  margin-top: 5px;
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*-------------labs-------------*/
+#labs{
+  padding: 50px 0;
+}
+
+.labs-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap:40px;
+  margin-top: 50px;
+}
+
+.labs{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.labs img{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+}
+
+.layer{
+  width:100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+
+}
+
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color:#ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.labs:hover img{
+  transform: scale(1.1);
+
+}
+
+.labs:hover .layer{
+  height: 100%;
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width:fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color:#fff;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: #ff004f;
+}
+
+/*---------------------contact-------------------*/
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis:60%
+}
+
+
+.social-icons a:hover{
+  color:#ff004f;
+  transform:translateY(-5px);
+}
+
+.icon-1:hover{
+  color:#ff004f;
+  transform:translateY(-5px);
+}
+
+.icon-2:hover{
+  color:#ff004f;
+  transform:translateY(-5px);
+}
+
+.icon-3:hover{
+  color:#ff004f;
+  transform:translateY(-5px);
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width:100%;
+  border:0;
+  outline: none;
+  background: #262626;
+  padding:15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+footer{
+  width:100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+footer i{
+  color: #ff004f;
+}
+
+/*---------------------------------courses-----------------------------*/
+#courseList{
+  padding: 80px 0;
+  margin-left: 15%;
+}
+
+
+
+.flex-container > div {
+  margin: 10px;
+  font-size: 15px;
+  
+}
+
+.title{
+  background-color: rgba(97,85,85,0.692);
+}
+
+.flex-container h3{
+  margin-top: 8px;
+}
+
+.flex-container {
+  display: flex;
+  flex-basis: calc(33.33% - 5px);
+  justify-content: space-between;
+  width: 98%;
+  height: 70%;
+  
+  
+  
+}
+
+.name{
+  color: #fff;
+}
+
+.column{
+  flex:0 0 auto;
+  width:25%;
+  
+}
+
+/*----------------------------------Search buttons---------------------*/
+#search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+  margin-left: 15%;
+}
+
+#search-buttons button:first-child {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#search-container input[type="text"],
+#search-container select {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 20%;
+}
+
+#search-container select {
+  cursor: pointer;
+  width: 150px;
+  height: 28px;
+  display: inline-block;
+  
+}
+
+#search-buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+  
+}
+
+#search-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #b54769;
+  color: #fff;
+  cursor: pointer;
+}
+
+#search-buttons button:hover {
+  background-color: #ff004f;
+}
+
+#search-container label{
+  margin-right: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* --------------------------css for small screens-----------------------*/
+nav .fa{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  
+  .header-text{
+    margin-top: 30%;
+    font-size: 20px;
+    
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  nav .fa{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+ .sub-title{
+  font-size: 40px;
+ }
+
+ .about-col-1, .about-col-2 {
+  flex-basis: 100%;
+ }
+
+ .about-col-1{
+  margin-bottom: 30px;
+ }
+
+ .about-col-2 {
+  font-size: 14px;
+ }
+
+ .tab-links{
+  font-size: 16px;
+  margin-right: 20px;
+ }
+
+ .logo{
+  width: 25%;
+ }
+ 
+ .text-intro p{
+  font-size: 20px;
+ }
+
+ .text-intro h2{
+  font-size: 25px;
+ }
+
+ .text-intro text-p{
+  font-size: 20px;
+  
+ }
+
+ 
+
+ .picture-col-1, .text-intro{
+  flex-basis: 100%;
+ }
+
+ .contact-left, .contact-right {
+  flex-basis: 100%;
+ }
+
+ .picture{
+  display: none;
+ }
+
+ .social-icons a{
+  font-size: 20px;
+  
+ }
+
+
+}
