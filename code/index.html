@@ -1,0 +1,125 @@
+<!--
+Name: Lilin Zeng
+Date: Mar,12 2023
+Section: CST 8285 section 314
+Lab: Assignment 1
+File: index.html
+Lab objective: Create a personal portfolio.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lilin Zeng">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/0a09bf951c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="../images/logo.png" alt= "Name logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#container">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resume.html#contact">Contact</a></li>
+                <i class="fa -regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa -solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span class="name">Lilin</span> Zeng<span class="click">（Learn more↓）</span><br>From <a href="https://www.algonquincollege.com/" target="_blank">Algonquin College</a></h1>
+        </div>
+<!--about-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="../images/Me-picture.jpeg" alt="Me-picture">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am currently a student studying Computer Programming 
+                            Level 2 at Algonquin College. 
+                            As a highly motivated individual with a strong academic background, 
+                            excellent organizational skills, and a positive attitude, I am confident 
+                            that I can make a valuable addition to any team.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, PHP, HTML/CSS, JavaScript, SQL</li>
+                                <li><span>Databases</span><br>MySQL, SQL Server, Oracle, MS Access</li>
+                                <li><span>Operating Systems</span><br>Windows 7, Windows 8, Windows 10, Linux, uBuntu</li>
+                                <li><span>Software Tools</span><br>Eclipse Neon/Mars, MySQL Workbench, SQL Server
+                                    Management Studio, Oracle SQL Developer, XAMPP, Wireshark, VMWare </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Sept 2022 – Present  </span><br>Computer Programming Diploma at Algonquin College</li>
+                                <li><span>Sept 2016 – June 2020</span><br>Public Affairs Management Bachelor From Southwest Petroleum University, China</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Hobbies">
+                            <ul>
+                                <li><span>Exercise</span><br>I love jogging and working out regularly every week. I even completed a half marathon when I was in college in China.This routine helps me stay healthier and become stronger.</li>
+                                <li><span>Movie</span><br>I enjoy watching movies and TV series from around the world. They are a great way to pass the time and help me learn about different cultures.</li>
+                                <li><span>Cooking</span><br>I enjoy cooking food, especially Chinese cuisine, and learning new recipes to cook other types of Asian cuisine.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+      </script>
+
+
+    </div>
+    <footer id="copyright">© 2023 Designed on Easy Tutorials and Made with 
+        <i class="fa-solid fa-heart"></i> by Lilin Zeng
+
+    </footer>
+</div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    
+</body>
+</html>

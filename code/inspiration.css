@@ -1,0 +1,86 @@
+/*
+Name: Lilin Zeng
+Date: Mar,5 2023
+Section: CST 8285 section 314
+Lab: lab 4
+File: inspiration.html
+Lab objective: Create a dynamic content using JavaScript
+*/
+
+/*Set a font stack for the body element */
+body{
+    font-family: 'Segoe UI',  Geneva, Verdana, sans-serif;
+
+}
+
+/*Style the header*/
+header{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-weight: lighter;
+    
+}
+
+/*Style the quote container*/
+.quote{
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+    background-color: cadetblue;
+    border-radius: 15pt;
+    border-style: solid;
+    border-width: 5px;
+    width: auto;
+    height: 100px;
+}
+
+/*Style the quote text*/
+.quote-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  
+  
+}
+
+/*Style the quote author*/
+.quote-author{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 15px;
+    padding-right: 10px;
+  
+}
+
+/*Style the button*/
+button{
+    display:block;
+    margin-top: 5%;
+    margin-left: 45%;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    cursor: pointer;
+
+}
+
+
+
+/*Hover effect for the button*/
+button:hover{
+    background-color: yellow;
+}
+

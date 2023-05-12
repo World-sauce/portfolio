@@ -1,0 +1,105 @@
+<!--
+Name: Lilin Zeng
+Date: Jan,26 2023
+Section: CST 8285 section 314
+Lab: lab 2
+File: customer.html
+Lab objective: Create a customer registration form.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content=" Create a customer registration form for lab2 ">
+        <meta name="keywords" content=" form,get,post">
+        <meta name="author" content=" Lilin Zeng ">
+        <title>Customer Registration</title>
+    </head>
+<body>
+
+    <h1 style="color:black ;">Customer Registration</h1>
+    <form action="process.php" method="get" enctype="text/plain">
+        <fieldset>
+            <legend>1.User Info</legend>
+            
+            <label for="fn">First Name</label>
+            <input type="text" id="fn" name="First name" maxlength="10">
+            
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln" name="Last name" value="Zeng" readonly><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="Email" size="65"
+            placeholder="format for email is xxx@yyy.zzz"><br>
+            <br>
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="secret"  
+            placeholder="at least 8 characters">
+
+            <label for="pr">Password Repeat</label>
+            <input type="password" id="pr" name="secret"  
+            placeholder="at least 8 characters">
+        </fieldset>
+
+        <fieldset>
+            <legend>2.Location</legend>
+            
+            <label for="add">Address</label><br>
+            <input type="text" id="add" name="Address" size="65">
+            <br>
+            <br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="City">
+            <label for="state">State</label>
+            <input type="text" id="state" name="State" size="7">
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="Zip" size="15">
+            <br>
+            <br>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone"  
+            placeholder="NNN-NNN-NNNN">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="Canada" selected>Canada</option>
+                <option value="America">America</option>
+            </select>
+            <br>
+            <label>Continent</label><br>
+            <input type="radio" id="NA" name="continent">
+            <label for="NA">North America</label>
+            <br>
+            <input type="radio" id="Europe" name="continent">
+            <label for="Europe">Europe</label>
+            <br>
+            <input type="radio" id="SA" name="continent">
+            <label for="SA">South America</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3.Personal Details</legend>
+            <label for="BD">Birth Day</label>
+            <input type="date" id="BD" name="birthday">
+
+            <label for="FC">Favorite Color</label>
+            <input type="color" id="FC" name="farorite color">
+            <br>
+            <label for="interest">Interest In Art</label><br>
+            Minimal<input type="range" id="interest" name="interest">Love it!
+        </fieldset>
+        
+        <h2><b>4.All Done</b></h2>
+        
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree to the </label>
+        <a href="mailto:Termsofthesite">Terms of the site</a>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button><br>
+        <label>2023 Copyright</label>
+        
+    </form>
+</body>
+
+</html>
